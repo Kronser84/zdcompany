@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101d2c">
+  <meta name="description" content="ООО «Железная дорога компания» — деловые контакты и информация о компании.">
+  <title>Железная дорога компания — ЖДК</title>
+  <style>
+    :root { color-scheme: light; --ink:#14253a; --muted:#5d6976; --line:#dce3e9; --accent:#b57d35; --bg:#f5f7f9; }
+    * {box-sizing:border-box}
+    html {scroll-behavior:smooth}
+    body {margin:0; font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif; color:var(--ink); background:var(--bg); line-height:1.55}
+    a {color:inherit}
+    .wrap {width:min(1120px,calc(100% - 48px));margin:auto}
+    header {background:#101d2c;color:#fff}
+    .top {display:flex;justify-content:space-between;align-items:center;min-height:94px;gap:24px}
+    .brand {display:flex;align-items:center;gap:15px;text-decoration:none}
+    .mark {display:grid;place-items:center;width:45px;height:45px;border:1.5px solid #c89a5b;color:#e2b777;letter-spacing:-.08em;font-size:15px;font-weight:800}
+    .brand b {display:block;letter-spacing:.1em;font-size:14px}
+    .brand small {display:block;color:#bdc9d6;font-size:12px}
+    .contact-top {color:#e2b777;text-decoration:none;font-weight:600}
+    .hero {background:linear-gradient(122deg,#101d2c 0%,#1b3047 69%,#223b52 100%);color:#fff;position:relative;overflow:hidden}
+    .hero:after {content:"";position:absolute;width:560px;height:560px;border:1px solid rgba(255,255,255,.11);transform:rotate(45deg);right:-320px;top:-225px;pointer-events:none}
+    .hero-inner {padding:112px 0 125px;position:relative;z-index:1}
+    .eyebrow {color:#d9a75e;letter-spacing:.18em;text-transform:uppercase;font-weight:700;font-size:12px}
+    h1 {max-width:880px;font-size:clamp(38px,6.2vw,76px);line-height:1.09;letter-spacing:-.045em;margin:22px 0 26px;font-weight:650}
+    .lead {max-width:670px;font-size:clamp(17px,2vw,21px);color:#cad4df;margin:0}
+    .rule {height:3px;width:72px;background:#c6995b;margin:40px 0}
+    main {padding:72px 0 90px}
+    .section-label {text-transform:uppercase;color:#9b6b2f;font-size:12px;letter-spacing:.16em;font-weight:750}
+    h2 {font-size:clamp(26px,3.4vw,39px);letter-spacing:-.025em;line-height:1.2;font-weight:650;margin:12px 0 20px}
+    .grid {display:grid;grid-template-columns:1.35fr 1fr;gap:42px}
+    .copy {max-width:690px;color:var(--muted);font-size:17px}
+    .contact-card {background:#fff;border:1px solid var(--line);padding:32px 36px;box-shadow:0 12px 40px rgba(24,42,60,.04)}
+    .contact-card p {color:var(--muted);margin:6px 0 12px}
+    .email {font-weight:700;font-size:clamp(18px,2vw,24px);text-underline-offset:5px;overflow-wrap:anywhere}
+    footer {border-top:1px solid var(--line);padding:25px 0;color:#6e7b88;font-size:13px}
+    footer .wrap {display:flex;justify-content:space-between;gap:16px}
+    @media(max-width:760px) {.top{min-height:84px}.contact-top{display:none}.hero-inner{padding:82px 0 90px}.grid{grid-template-columns:1fr;gap:26px}main{padding:56px 0 65px}.contact-card{padding:25px}footer .wrap{flex-direction:column;gap:4px}}
+    @media(prefers-reduced-motion:reduce) {html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap top">
+      <a class="brand" href="/" aria-label="Железная дорога компания — главная">
+        <span class="mark" aria-hidden="true">ЖДК</span>
+        <span><b>ЖЕЛЕЗНАЯ ДОРОГА КОМПАНИЯ</b><small>ООО «ЖДК»</small></span>
+      </a>
+      <a class="contact-top" href="mailto:ooojdk@mail.ru">Связаться с нами</a>
+    </div>
+  </header>
+  <section class="hero" aria-labelledby="main-title">
+    <div class="wrap hero-inner">
+      <div class="eyebrow">Железнодорожная отрасль</div>
+      <h1 id="main-title">Железная дорога компания</h1>
+      <p class="lead">Проекты и решения для железнодорожной инфраструктуры.</p>
+      <div class="rule" aria-hidden="true"></div>
+      <p class="lead">Сайт компании находится в разработке. Для деловых запросов используйте электронную почту.</p>
+    </div>
+  </section>
+  <main class="wrap">
+    <div class="grid">
+      <section aria-labelledby="about">
+        <div class="section-label">О компании</div>
+        <h2 id="about">ООО «ЖДК»</h2>
+        <p class="copy">Общество с ограниченной ответственностью «Железная дорога компания». На этой странице размещены основные сведения и контакт для деловой переписки. Информация о направлениях деятельности будет дополняться.</p>
+      </section>
+      <section class="contact-card" aria-labelledby="contacts">
+        <div class="section-label">Контакты</div>
+        <h2 id="contacts">Свяжитесь с нами</h2>
+        <p>Электронная почта для обращений и предложений:</p>
+        <a class="email" href="mailto:ooojdk@mail.ru">ooojdk@mail.ru</a>
+      </section>
+    </div>
+  </main>
+  <footer><div class="wrap"><span>© ООО «Железная дорога компания»</span><span>zdcompany.ru</span></div></footer>
+</body>
+</html>
